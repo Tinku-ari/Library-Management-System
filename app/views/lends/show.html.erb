@@ -1,0 +1,25 @@
+<h1>Book Lent for <%= @lend[:member_id] %></h1>
+
+
+<div>
+  <strong>Member: </strong>
+  <%= @lend[:member_id] %>
+</div>
+
+<div>
+  <strong>Book Code: </strong>
+  <%= @lend[:book_code] %>
+</div>
+
+<div>
+  <strong>Date of Issue: </strong>
+  <%= @lend[:date_of_issue] %>
+</div>
+
+<div>
+  <strong>Date of Return: </strong>
+  <%= @lend[:date_of_return] %>
+</div>
+
+
+<%= link_to "Back", lends_path %>

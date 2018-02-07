@@ -1,0 +1,23 @@
+<h1>Book Lending Management</h1>
+<%= link_to "Lend a Book", new_lend_path %> <br>
+
+<table>
+  <tr>
+    <th>Member_ID</th>
+    <th>Book_Code</th>
+    <th>Date_of_Issue</th>
+    <th>Date_of_Return</th>
+    <th></th>
+  </tr>
+
+  <% @lends.each do |lend| %>
+    <tr>
+      <td><%= lend.member_id %></td>
+      <td><%= lend.book_code %></td>
+      <td><%= lend.date_of_issue %></td>
+      <td><%= lend.date_of_return %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to "Back", root_path %>

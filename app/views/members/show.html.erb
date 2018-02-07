@@ -1,0 +1,13 @@
+<h2>About <%= @member.name %></h2>
+<div>
+  <strong>Name: </strong>
+  <%= @member.name %>
+</div>
+
+<div>
+  <strong>Description: </strong>
+  <%= @member.description %>
+</div>
+
+<%= link_to "Edit", edit_member_path %>
+<%= link_to "Back to members list", members_path %>
